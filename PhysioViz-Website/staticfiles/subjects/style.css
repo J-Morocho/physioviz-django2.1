@@ -1,0 +1,57 @@
+body {
+    background-color: #1C1C1C;
+    padding: 10px 5px 0px 5px;
+    font-family: 'monospace', serif;
+}
+
+
+h1#nameplate {
+    font-family: 'Fjord One', serif;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+hr {
+    color: white;
+}
+
+.subject-info-table {
+    color: white;
+    margin-top: 20px;
+    font-family: 'monospace', serif;
+}
+
+ul li {
+    list-style-type: none;
+    color: white;
+    display: inline;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: #7c7c7c;
+    border-style: solid;
+    padding: 10px;
+    background-color: #3b3b3b;
+}
+
+
+
+div#subject-temperature {
+    color: white;
+}
+
+#temp {
+    color: red;
+}
+
+#subject-eda{
+    color: white;
+}
+
+#eda {
+    color: red;
+}
+

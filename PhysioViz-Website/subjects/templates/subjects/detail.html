@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'subjects/style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjord+One|Source+Sans+Pro&display=swap">
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <div id="nameplate-container">
+            <h1 id='nameplate'> PhysioViz </h1>
+        </div>
+        <hr>
+        <div class="subject-info-table">
+            <ul id="subject-info"> 
+                <li>Subject Number: {{ Number }} </li>
+                <li>Age:    {{ Age }}    </li>
+                <li>Gender: {{ Gender }} </li>
+                <li>Height: {{ Height }} cm</li>
+                <li>Weight: {{ Weight }} kg</li>
+            </ul>
+        </div>
+        <div id='subject-temperature'> 
+            <!-- Insert temperature value here-->
+            <p> Temperature: </p>
+            <div id="temp">
+                {{ temp_array }}
+            </div>
+            <div id='unit'> &#8451 </div>
+        </div>
+
+        
+        <div id='subject-eda'>
+            <p> Electrodermal Activity: </p>
+            <div id='eda'>
+                {{ eda_array }}
+            </div>
+        </div>
+
+        <div id='subject-hr'>
+            <p> Heart Rate: </p>
+            <div id='hr'>
+                {{ hr_array }}
+            </div>
+        </div>
+        
+        <div id="chart-container" style="position: relative; height:30vh; width:100vh"> 
+            <canvas id="my-chart" width="400" height="400"></canvas>
+        </div>
+        <script src="{% static 'subjects/main.js' %}"> </script>
+
+
+    </body>
+</html>

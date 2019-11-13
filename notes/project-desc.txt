@@ -1,0 +1,11 @@
+What is the goal of the project?
+
+The idea is to create a dynamic(hopefully) visualization of a non-EEG dataset through django.
+
+What functionality will it have?
+
+The user will be presented with the data of subject 1. 
+User will be able to click a play button to have the metrics play out over time.
+The user can then choose another subject's data to look at by using a drop down menu.
+The HR will be displayed as large numbers.
+

@@ -1,0 +1,31 @@
+PhysioViz Notes
+------------------
+
+- Data files are in WFDB format
+
+- There are two records per subject
+    1. One contains Accelerometer, Temperature, and EDA signals
+	- I will only focus on temperature data and maybe on EDA signal.
+	- Multiple factors alter EDA
+    2. The other contains Sp02 and HR signals.
+
+- Header files contain information about the subject
+- One annotation file per subject indicating time locations and labels of transition states.
+- subjectinfo.csv also contains information about each subject.
+
+.dat files are binary signal files.
+.hea are short text header files. Used to read signal files and determinge location and format.
+.atr binary files containing lables that point to specific times of occurence in ECG signals
+
+
+
+
+Citations:
+-------------
+Birjandtalab, Javad, Diana Cogan, Maziyar Baran Pouyan, and Mehrdad Nourani,
+A Non-EEG Biosignals Dataset for Assessment and Visualization of Neurological Status, 
+2016 IEEE International Workshop on Signal Processing Systems (SiPS), Dallas, TX, 2016, pp. 110-114. doi: 10.1109/SiPS.2016.27
+
+[200~Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh, Mark RG, Mietus JE, Moody GB, Peng C-K, 
+Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals. 
+Circulation 101(23):e215-e220 [Circulation Electronic Pages; http://circ.ahajournals.org/content/101/23/e215]; 2000 (June 13).
